@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --bg-color: rgb(211, 91, 247);
+  --white: #fff;
+  --Dark-blue: rgb(155, 10, 200);
+  --white: #fff;
+}
+
+body {
+  background: var(--bg-color);
+  background-position: center;
+  height: 100vh;
+  font-family: "Lato", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  font-family: "Overpass", sans-serif;
+}
+.title {
+  position: absolute;
+  top: 40px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+main {
+  text-align: center;
+  height: max-content;
+  width: 400px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 3.5rem 2rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
+}
+
+.input-div {
+  display: flex;
+  gap: 28px;
+  height: max-content;
+  width: 100%;
+}
+
+.input-div input {
+  width: 100%;
+  outline: none;
+  font-size: 20px;
+  border: 2px solid transparent;
+  border-bottom-color: rgb(162, 160, 160);
+}
+.input-div input:focus {
+  border-bottom-color: var(--Dark-blue);
+}
+
+.btns button {
+  /* height: 40px; */
+  padding: 0.5rem 0.6rem;
+  width: 100%;
+  border: none;
+  border-radius: 3px;
+  background-color: var(--Dark-blue);
+  color: #fff;
+  font-size: 1.3rem;
+  transition: all 0.2s;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.btns button:hover {
+  transform: scale(1.03);
+  color: #fff;
+  opacity: 0.915;
+}
+
+.result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--Dark-blue);
+  padding: 0.4rem 0;
+  height: 40px;
+  width: 100%;
+  overflow: scroll;
+  margin-top: 28px;
+  font-size: 25px;
+  font-weight: bold;
+}
+.result::-webkit-scrollbar {
+  display: none;
+}
+
+/* footer */
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+@media only screen and (max-width: 425px) {
+  main {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .title {
+    font-size: 1.5rem;
+  }
+  .result {
+    font-size: 20px;
+  }
+  footer {
+    font-size: 1.2rem;
+  }
+}
