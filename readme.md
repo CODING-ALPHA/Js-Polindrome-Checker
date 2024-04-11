@@ -6,7 +6,7 @@
 
 - Clone or download the repository.
 - Open the HTML file (e.g., index.html) in your web browser.
-  -Enter text in the input field.
+- Enter text in the input field.
 - Click the "Check" button.
 
 ## Result
